@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+</head>
+
+<body>
+    <h1><strong>Formulario de contato</strong></h1>
+    <br>
+    <div class="formulario">
+        <form action="" id="form">
+            <p>Nome</p>
+            <input id="nome" class="cyberpunkform" type="text" />
+
+            <br>
+
+            <p>E-mail</p>
+            <input id="email" class="cyberpunkform" type="text" />
+
+            <br>
+            <p>Mensagem</p>
+            <textarea id="msg" class="cyberpunkform" name="mensagem" cols="48" rows="8" id="mensagem" value="" input></textarea>
+            <br>
+            <br>
+            <button id="btnsub" type="submit" class="cyberpunk2077 red">Submit_</button>
+
+
+
+        </form>
+    </div>
+
+
+    <script>
+        var msg;
+        var formData = new FormData();
+        let user;
+        $(document).ready(function() {
+            $(document).on('submit', '#form', function() {
+                alert("Mensagem enviada");
+            });
+        });
+    </script>
+</body>
+
+</html>
