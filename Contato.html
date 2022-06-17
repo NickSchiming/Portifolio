@@ -7,42 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
 
 <body>
-    <h1><strong>Responda o questionario</strong></h1>
+    <h1><strong>Formulario de contato</strong></h1>
     <br>
-    <form action="" id="form">
-        <p>Idade</p>
-        <input name="idIdade" type="number">
+    <div class="formulario">
+        <form action="" id="form">
+            <p>Nome</p>
+            <input id="nome" class="cyberpunkform" type="text" />
 
-        <br>
+            <br>
 
-        <p>Sexo</p>
-        Masculino:
-        <input name="idSexo" type="radio" value=1>
-        <br> Feminino:
-        <input name="idSexo" type="radio" value=2>
-        <br> Outro:
-        <input name="idSexo" type="radio" value=3>
+            <p>E-mail</p>
+            <input id="email" class="cyberpunkform" type="text" />
 
-        <br>
-        <p>Opinião</p>
-        Otimo:
-        <input name="idOp" type="radio" value=4>
-        <br>Bom:
-        <input name="idOp" type="radio" value=3>
-        <br>Regular:
-        <input name="idOp" type="radio" value=2>
-        <br>Pessimo:
-        <input name="idOp" type="radio" value=1>
-
-        <br>
-        <br>
-        <input id="btnsub" type="submit" value="Submit">
+            <br>
+            <p>Mensagem</p>
+            <textarea id="msg" class="cyberpunkform" name="mensagem" cols="48" rows="8" id="mensagem" value="" input></textarea>
+            <br>
+            <br>
+            <button id="btnsub" type="submit" class="cyberpunk2077 red">Submit_</button>
 
 
-    </form>
+
+        </form>
+    </div>
+
+
+    <script>
+        var msg;
+        var formData = new FormData();
+        let user;
+        $(document).ready(function() {
+            $(document).on('submit', '#form', function() {
+                alert("Mensagem enviada");
+            });
+        });
+    </script>
 </body>
 
 </html>
